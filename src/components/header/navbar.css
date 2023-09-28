@@ -1,0 +1,80 @@
+li {
+  list-style: none;
+  color: white;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  padding: 10px 20px;
+  margin-right: 3px;
+  border: none;
+  background-color: #2f3640;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+input::placeholder {
+  color: white;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+/* Reset default button styles */
+button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Custom button styles */
+.custom-button {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+input:focus {
+  box-shadow: 0px 0px 2px 3px pink;
+  outline: none;
+}
+/* media queries */
+/* mobile size */
+@media (max-width: 600px) {
+  div {
+    flex-direction: column;
+  }
+  input::placeholder {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 600;
+  }
+  input {
+    background-color: #2f3640;
+    margin-right: 0px;
+  }
+
+  .custom-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+  li {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+  .responsive {
+    display: flex;
+  }
+}

@@ -1,0 +1,62 @@
+/* h4 {
+  text-align: center;
+}
+.parent {
+  display: grid;
+  grid-template-rows: 350px 350px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  grid-auto-rows: 350px;
+  margin: 45px;
+}
+.child img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .parent {
+    margin: 10px;
+  }
+} */
+h4 {
+  text-align: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-rows: 350px 350px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  grid-auto-rows: 350px;
+  margin: 45px;
+}
+
+.child {
+  position: relative; /* Add this to control child elements */
+  overflow: hidden; /* Hide overflow content during hover */
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+.child img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect to the image */
+}
+
+/* Add hover styles */
+.child:hover {
+  transform: scale(1.05); /* Increase the size of the grid item on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+}
+
+.child:hover img {
+  transform: scale(1.1); /* Increase the size of the image on hover */
+}
+
+@media (max-width: 600px) {
+  .parent {
+    margin: 10px;
+  }
+}
