@@ -47,7 +47,7 @@ const Movies = () => {
         });
     }
   }, [SearchData]);
-
+  console.log(movies);
   return (
     <div className="parent">
       {movies?.map((movie) => (

@@ -27,16 +27,16 @@ h4 {
   display: grid;
   grid-template-rows: 350px 350px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 10px;
+  gap: 2.5rem;
   grid-auto-rows: 350px;
   margin: 45px;
 }
 
 .child {
-  position: relative; /* Add this to control child elements */
-  overflow: hidden; /* Hide overflow content during hover */
-  border-radius: 10px;
-  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem 1rem 1rem;
+  transition: transform 0.5s ease-in-out;
 }
 
 .child img {
@@ -48,11 +48,11 @@ h4 {
 /* Add hover styles */
 .child:hover {
   transform: scale(1.05); /* Increase the size of the grid item on hover */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+  box-shadow: 0 0 10px rgba(158, 12, 12, 0.3); /* Add a subtle shadow effect */
 }
 
 .child:hover img {
-  transform: scale(1.1); /* Increase the size of the image on hover */
+  transform: scale(1.05); /* Increase the size of the image on hover */
 }
 
 @media (max-width: 600px) {
